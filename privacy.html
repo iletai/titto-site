@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Titto privacy policy: no telemetry, no account, no server. Your clipboard stays on your Mac." />
+<meta name="color-scheme" content="light dark" />
+<title>Titto — Privacy Policy</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="canonical" href="https://iletai.github.io/titto-site/privacy.html" />
+<meta property="og:title" content="Titto — Privacy Policy" />
+<meta property="og:description" content="Titto privacy policy: no telemetry, no account, no server. Your clipboard stays on your Mac." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iletai.github.io/titto-site/privacy.html" />
+<meta property="og:image" content="https://iletai.github.io/titto-site/assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+  :root {
+    --fg: #1c1c1e;
+    --bg: #ffffff;
+    --muted: #6e6e73;
+    --accent: #1f6feb;
+    --rule: #e5e5ea;
+    --code-bg: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #f2f2f7;
+      --bg: #1c1c1e;
+      --muted: #98989d;
+      --accent: #6ea8fe;
+      --rule: #2c2c2e;
+      --code-bg: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    padding: 2rem 1.25rem 4rem;
+  }
+  main { max-width: 720px; margin: 0 auto; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1rem; margin-bottom: 2rem; }
+  h1 { font-size: 1.85rem; margin: 0 0 .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.25rem; padding-top: .25rem; border-top: 1px solid var(--rule); }
+  h3 { font-size: 1.05rem; margin-top: 1.5rem; }
+  p, li { color: var(--fg); }
+  .muted { color: var(--muted); }
+  .effective { color: var(--muted); font-size: .9rem; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: var(--code-bg); padding: .15rem .35rem; border-radius: 4px; font-size: .9em; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { text-align: left; padding: .55rem .65rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-weight: 600; background: var(--code-bg); }
+  ul { padding-left: 1.25rem; }
+  .callout {
+    background: var(--code-bg);
+    border-left: 3px solid var(--accent);
+    padding: .75rem 1rem;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
+  .btn { display: inline-block; padding: .5rem 1rem; border-radius: 8px; font-weight: 600; background: var(--accent); color: #fff; }
+  .btn:hover { text-decoration: none; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-size: .85rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Titto Privacy Policy</h1>
+    <p class="effective">Effective date: 2026-11-04 · Last updated: 2026-11-04</p>
+    <p> </p>
+  </header>
+
+  <div class="callout">
+    <strong>The short version.</strong> Titto runs entirely on your Mac. We do not collect,
+    transmit, store, or sell any personal information. There is no analytics SDK, no telemetry,
+    no account, and no server. Your clipboard history never leaves your device.
+  </div>
+
+  <h2>1. Who this policy covers</h2>
+  <p>
+    This policy applies to <strong>Titto</strong> (the "App"), a macOS clipboard
+    manager distributed by the project maintainer (<a href="https://github.com/iletai">@iletai</a>)
+    via the Mac App Store.
+    The App's bundle identifier is <code>com.titto.clipboardmanager</code>.
+  </p>
+
+  <h2>2. Data we collect</h2>
+  <p><strong>None.</strong> Titto has no backend, no analytics, no crash reporter, and no account system.</p>
+  <p>
+    The table below maps Apple's Privacy Nutrition Label categories to Titto. Every category
+    is "Not Collected".
+  </p>
+  <table>
+    <thead><tr><th>Category</th><th>Status</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Contact Info</td><td>Not collected</td><td>App has no account or sign-in.</td></tr>
+      <tr><td>Health &amp; Fitness</td><td>Not collected</td><td>Out of scope.</td></tr>
+      <tr><td>Financial Info</td><td>Not collected</td><td>App is free; no payment flow.</td></tr>
+      <tr><td>Location</td><td>Not collected</td><td>Location services are not used.</td></tr>
+      <tr><td>Sensitive Info</td><td>Not collected</td><td>No transmission off-device.</td></tr>
+      <tr><td>Contacts</td><td>Not collected</td><td>Address Book is not accessed.</td></tr>
+      <tr><td>User Content</td><td>Not collected (stored locally)</td><td>Clipboard items are stored on-device only — see §3.</td></tr>
+      <tr><td>Browsing History</td><td>Not collected</td><td>Browser history APIs are not used.</td></tr>
+      <tr><td>Search History</td><td>Not collected</td><td>Search terms typed into the panel never leave the device.</td></tr>
+      <tr><td>Identifiers</td><td>Not collected</td><td>No IDFA, no IDFV, no install ID, no UUID is generated for tracking.</td></tr>
+      <tr><td>Purchases</td><td>Not collected</td><td>No in-app purchases.</td></tr>
+      <tr><td>Usage Data</td><td>Not collected</td><td>No analytics framework is linked.</td></tr>
+      <tr><td>Diagnostics</td><td>Not collected</td><td>No crash reporter is linked. macOS may surface system crash logs via the standard OS dialog; those go to Apple, not to us.</td></tr>
+      <tr><td>Other Data</td><td>Not collected</td><td>—</td></tr>
+    </tbody>
+  </table>
+
+  <h2>3. Data stored locally on your Mac</h2>
+  <p>
+    Titto's whole job is to remember what you copied so you can paste it again. To do that it
+    keeps a local SQLite database at:
+  </p>
+  <p><code>~/Library/Application Support/com.titto.clipboardmanager/clipboard.sqlite</code></p>
+  <p>This file:</p>
+  <ul>
+    <li>Lives only on your Mac, in your user account.</li>
+    <li>Is never uploaded, synced, or transmitted by Titto.</li>
+    <li>Inherits filesystem-level encryption from <strong>FileVault</strong> when you have FileVault enabled. Titto does not add an additional application-layer encryption pass in this release.</li>
+    <li>Can be deleted at any time. Quit Titto, remove the file (or the parent folder), and relaunch — Titto will start with an empty history. You can also use <em>Settings → Privacy → Clear history</em>.</li>
+    <li>Can be exported by you via <em>Settings → Export</em> (SQLite snapshot or JSON Lines). Exported files go wherever you save them; we have no copy.</li>
+  </ul>
+
+  <h2>4. Sensitive-data filtering</h2>
+  <p>
+    Titto's <strong>SensitivityDetector</strong> runs heuristic checks before persisting clipboard
+    items, and excludes likely passwords, API tokens, and credit-card numbers from search
+    results and from the quick-copy hotkeys. It also honors Apple's "concealed" pasteboard
+    type used by password managers (e.g. items copied from 1Password are dropped).
+  </p>
+  <div class="callout">
+    <strong>Best-effort, not a guarantee.</strong> The detector is heuristic. It will miss
+    novel secret formats and may occasionally over-block. Treat it as defense-in-depth, not
+    as a security boundary. If a clip must be excluded with certainty, use the bundle-ID or
+    regex deny-list in <em>Settings → Privacy</em>.
+  </div>
+
+  <h2>5. URL preview (optional, opt-in)</h2>
+  <p>
+    When you copy a URL, Titto can fetch a small preview (title + favicon) by issuing an
+    HTTP <code>HEAD</code> or limited <code>GET</code> request to the URL. This feature:
+  </p>
+  <ul>
+    <li>Is <strong>off by default</strong> — you must enable it in <em>Settings → Privacy → URL preview</em>.</li>
+    <li>Refuses to fetch private-network and link-local addresses (RFC 1918, loopback, IPv6 ULA / link-local) — a private-IP guard runs before any network call.</li>
+    <li>Sends only the request your browser would already send when you visit the URL. No identifiers are added.</li>
+    <li>Can be disabled at any time, immediately and globally.</li>
+  </ul>
+  <p>
+    If you keep URL preview off, Titto performs <strong>no network requests at all</strong>
+    aside from anything macOS itself does (e.g. Gatekeeper, OCSP).
+  </p>
+
+  <h2>6. Permissions Titto asks for, and why</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Why</th><th>What we do <em>not</em> do</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Accessibility</td>
+        <td>To synthesize a <code>⌘V</code> keystroke via <code>CGEvent</code> when you choose to paste a clip back. This is the only way a non-sandboxed agent can paste into the app you were just using.</td>
+        <td>We do not record keystrokes, capture screen content, or read other apps' UI.</td>
+      </tr>
+      <tr>
+        <td>Input Monitoring (optional)</td>
+        <td>Used only if you opt into "panel-key-only mode" so a single key (e.g. number-row) can dismiss the panel without a global hotkey.</td>
+        <td>We do not log keystrokes or send them anywhere.</td>
+      </tr>
+      <tr>
+        <td>AppleEvents</td>
+        <td><strong>Not used.</strong> Titto does not script other apps.</td>
+        <td>—</td>
+      </tr>
+      <tr>
+        <td>Network</td>
+        <td>Used only when you enable URL preview (§5). Otherwise no network access.</td>
+        <td>No analytics, no telemetry, no remote config, no update ping (updates are delivered by the Mac App Store).</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>7. Required Reason APIs</h2>
+  <p>
+    Apple requires apps to declare a reason for using certain platform APIs. Titto declares
+    these reasons in its bundled <code>PrivacyInfo.xcprivacy</code> manifest. The current
+    declarations cover <code>UserDefaults</code> (CA92.1 — to read and write the app's own
+    preferences), and where applicable file timestamp, system boot time, and free disk
+    space APIs used by the storage layer for housekeeping.
+  </p>
+  <p>
+    For Apple's reference list see
+    <a href="https://developer.apple.com/documentation/bundleresources/privacy_manifest_files/describing_use_of_required_reason_api">Apple's Required Reason API documentation</a>.
+  </p>
+
+  <h2>8. Children's privacy</h2>
+  <p>
+    Titto is not directed at children under 13 and does not knowingly collect any
+    information from anyone, including children. Apple's age rating for the App is 4+.
+  </p>
+
+  <h2>9. Your rights (GDPR / CCPA / similar)</h2>
+  <p>
+    Because Titto stores all clipboard data locally on your device and we operate no
+    servers, there is no remote dataset for us to access, export, correct, or delete on
+    your behalf.
+  </p>
+  <ul>
+    <li><strong>Access / portability:</strong> use <em>Settings → Export</em>.</li>
+    <li><strong>Correction:</strong> edit or delete individual items inside the App.</li>
+    <li><strong>Deletion:</strong> use <em>Settings → Privacy → Clear history</em> or remove the database file (§3).</li>
+    <li><strong>Objection / withdrawal of consent:</strong> quit and uninstall the App.</li>
+  </ul>
+
+  <h2>10. Third-party services</h2>
+  <p>
+    Titto bundles the open-source <a href="https://github.com/groue/GRDB.swift">GRDB.swift</a>
+    library to talk to SQLite. GRDB runs entirely in-process and makes no network calls of
+    its own. No advertising SDKs, no analytics SDKs, no crash-reporting SDKs are linked.
+  </p>
+
+  <h2>11. Security</h2>
+  <p>
+    Titto is distributed under Apple's <strong>Hardened Runtime</strong>, signed with a
+    Developer ID certificate, and notarized by Apple before release. The app sandbox is
+    intentionally disabled because the paste flow needs to inject keystrokes into the
+    previously focused app — see the project's for our
+    threat model and disclosure process.
+  </p>
+
+  <h2>12. Changes to this policy</h2>
+  <p>
+    If we ever change this policy, the new version will replace this page and the
+    "Last updated" date at the top will change. Material changes (anything that would
+    enable network transmission of your clipboard, add analytics, or weaken the
+    sensitive-data filter) will additionally be called out in the release notes for the
+    version that introduces them.
+  </p>
+
+  <h2>13. Contact</h2>
+  <p>
+    The maintainer accepts privacy questions and reports through the project's public
+    issue tracker:
+    <a href="mailto:iletai@hotmail.com">iletai@hotmail.com</a>.
+    For coordinated security disclosure, follow the process in .
+  </p>
+
+  <footer>
+    Titto 0.8.8  <a href="support.html">Support</a><br />
+     .
+  </footer>
+</main>
+</body>
+</html>

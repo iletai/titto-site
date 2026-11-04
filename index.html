@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>Titto — The Ditto-killer clipboard manager for Apple Silicon</title>
+<meta name="description" content="Titto is a native, privacy-first clipboard manager for macOS. FTS5 search, ⌘⇧V hotkey, ⌃⌥⌘1..9 quick-copy, sensitive-data smart-skip. Apple Silicon native." />
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="assets/favicon.ico" sizes="any" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+<link rel="canonical" href="https://iletai.github.io/titto-site/" />
+<meta property="og:title" content="Titto — The Ditto-killer clipboard manager for Apple Silicon" />
+<meta property="og:description" content="Titto is a native, privacy-first clipboard manager for macOS. FTS5 search, ⌘⇧V hotkey, ⌃⌥⌘1..9 quick-copy, sensitive-data smart-skip. Apple Silicon native." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://iletai.github.io/titto-site/" />
+<meta property="og:image" content="https://iletai.github.io/titto-site/assets/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<style>
+  :root {
+    --fg: #1c1c1e; --bg: #ffffff; --muted: #6e6e73; --accent: #1f6feb;
+    --rule: #e5e5ea; --card: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg: #f2f2f7; --bg: #0b0b0d; --muted: #98989d; --accent: #6ea8fe; --rule: #2c2c2e; --card: #1c1c1e; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    color: var(--fg); background: var(--bg);
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .hero { text-align: center; padding: 2rem 0 3rem; border-bottom: 1px solid var(--rule); }
+  .hero h1 { font-size: 2.6rem; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .hero p.tag { font-size: 1.2rem; color: var(--muted); margin: 0 0 1.5rem; }
+  .badges img { height: 22px; margin: 0 .25rem; vertical-align: middle; }
+  .cta { margin-top: 2rem; }
+  .btn {
+    display: inline-block; padding: .7rem 1.25rem; margin: .25rem;
+    border-radius: 8px; font-weight: 600; text-decoration: none;
+    background: var(--accent); color: #fff;
+  }
+  .btn.secondary { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 3rem 0; }
+  .card { background: var(--card); border-radius: 10px; padding: 1.25rem 1.25rem 1.5rem; }
+  .card h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .95rem; }
+  .muted { color: var(--muted); margin: 0; }
+  code { background: var(--card); padding: .1rem .35rem; border-radius: 4px; font-size: .92em; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; text-align: center; }
+  footer a { margin: 0 .5rem; }
+</style>
+</head>
+<body>
+<main>
+  <section class="hero">
+    <h1>Titto ✨</h1>
+    <p class="tag">The Ditto-killer clipboard manager for Apple Silicon.</p>
+    <div class="badges">
+      <img alt="macOS 13+" src="https://img.shields.io/badge/macOS-13%2B-000000?logo=apple&logoColor=white" />
+      <img alt="Apple Silicon native" src="https://img.shields.io/badge/Apple%20Silicon-native%20arm64-1f6feb?logo=apple&logoColor=white" />
+      <img alt="Privacy first" src="https://img.shields.io/badge/privacy-no%20telemetry-2da44e" />
+    </div>
+    <p class="muted">Current version: <strong>0.8.8</strong></p>
+    <div class="cta">  </div>
+  </section>
+
+  <section class="features">
+    <div class="card">
+      <h3>🪟 Detached panel</h3>
+      <p>Tear the history panel out of the menubar into a free-floating, resizable window. Per-display position memory and an optional always-on-top mode.</p>
+    </div>
+    <div class="card">
+      <h3>⌨️ Quick-copy ⌃⌥⌘1..9</h3>
+      <p>Nine global hotkeys map to your nine most-recent clips. Sub-50 ms hotkey-to-paste end-to-end. Off by default; opt in per slot.</p>
+    </div>
+    <div class="card">
+      <h3>🛡️ Sensitive smart-skip</h3>
+      <p>Likely passwords, tokens, and credit-card numbers are filtered out of search and quick-copy before they ever leave the database row.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Titto</h2>
+    <ul>
+      <li>Native arm64. No Electron, no JavaScript runtime.</li>
+      <li>FTS5 + BM25 + recency boost search, built for 100k+ clips.</li>
+      <li>Vietnamese-aware out of the box — type <code>tieng viet</code>, find <em>"tiếng Việt"</em>.</li>
+      <li>Privacy-first: no analytics, no telemetry, no account, no server. Everything stays on your Mac.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> ·
+    <a href="support.html">Support</a> 
+    <a href="mailto:iletai@hotmail.com">iletai@hotmail.com</a> <p>© 2026 Le Quang Trong Tai.</p>
+  </footer>
+</main>
+</body>
+</html>
